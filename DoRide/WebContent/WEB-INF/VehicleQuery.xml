@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Querys>
+
+	<!-- Create table vehicle Query -->
+	<query id="create_vehicle_table">
+        <![CDATA[
+            CREATE TABLE vehicle(
+				vehicleID varchar(10) not null,
+				vehicleName varchar(20),
+				registrationNum varchar(150),
+				type varchar(15),
+				description varchar(15),
+				ratePerDay  float,
+				primary key (vehicleID)
+			)
+        ]]>
+	</query>
+	
+	<!-- DROP TABLE VEHICLE Query -->
+	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS vehicle 
+        ]]>
+	</query>
+	
+	<!-- Select all vehicle orders Query -->
+	<query id="insert_vehicle">
+        <![CDATA[
+          	insert into vehicle (vehicleID, vehicleName, registrationNum, type, description, ratePerDay) 
+          	values (?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+	
+	<!-- Select a particular vehicle by id Query -->
+	<query id="vehicle_by_id">
+         <![CDATA[        
+            select * from vehicle where vehicle.vehicleID = ?
+        ]]>
+	</query>
+	
+	<!-- Select all vehicles -->
+	<query id="all_vehicles">
+         <![CDATA[        
+            select * from vehicle
+        ]]>
+	</query>
+	
+	<!-- Delete a particular vehicle by id Query -->
+	<query id="remove_vehicle">
+         <![CDATA[        
+            delete from vehicle where vehicle.vehicleID = ?
+        ]]>
+	</query>	
+
+	<!-- Update a particular vehicle by id Query -->
+	<query id="update_vehicle">
+         <![CDATA[        
+            update vehicle as v 
+            set v.vehicleName = ?, v.registrationNum = ?, v.type = ?, v.description = ?, v.ratePerDay = ?
+            where v.vehicleID = ?
+        ]]>
+	</query>
+
+	<!-- Get vehicle IDs Query -->
+	<query id="vehicle_ids">
+         <![CDATA[        
+            select v.vehicleID from vehicle as v
+        ]]>
+	</query>
+
+</Querys>

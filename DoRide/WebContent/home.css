@@ -1,0 +1,204 @@
+@charset "ISO-8859-1";
+
+
+body
+{
+	padding: 0;
+	margin: 0;
+	background-image: url(bb.jpg);
+	background-size: cover;
+	background-position: center;
+	box-sizing: border-box;
+	font-style: italic;
+	
+}
+
+.logo
+{
+	width: 150px;
+	height: 120px;
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+.menu-bar
+{
+	background: #400040;
+	text-align: center;
+	height: 160px;
+}
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.menu-bar ul li
+{
+	width: 100px;
+	margin: 15px;
+	padding: 15px;
+	padding-top: 10px;
+	float: right;
+}
+
+
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+.active, .menu-bar ul li:hover
+{
+	background: #c0c0c0;
+	border-radius: 3px;
+}
+
+.menu-bar .fa
+{
+	margin-right;
+}
+
+.msg p
+{
+	font-style: italic;
+	font-size: 20px;
+	
+}
+
+.side-msg p
+{
+	font-style: italic;
+	font-size: 20px;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 100px;
+  padding-top: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a
+{
+	text-decoration: none;
+	outline: none;
+}
+
+.footer-main-div
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: #272727;
+	padding: 20px 0px;
+}
+
+.footer-social-icons
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.footer-social-icons ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-social-icons ul li
+{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background: #32CD32;
+}
+
+.footer-social-icons ul li a
+{
+	color: #272727;
+	font-size: 25px;
+	display: block;
+}
+
+.footer-social-icons ul li a i
+{
+	line-height: 50px;
+}
+
+.footer-menu-one
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.footer-menu-one ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-menu-one ul li
+{
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.footer-menu-one ul li a
+{
+	font-family: arial;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase; 
+}
+
+.footer-menu-two
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.footer-menu-two ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-menu-two ul li
+{
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.footer-menu-two ul li a
+{
+	font-family: arial;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase; 
+}
+
