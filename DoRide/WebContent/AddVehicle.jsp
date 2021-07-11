@@ -11,6 +11,7 @@
 
 
 
+
 	<h1>Add New Vehicle</h1>
 	
 	<form method="post" action="insert">
